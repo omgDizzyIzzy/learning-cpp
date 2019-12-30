@@ -12,7 +12,6 @@ This is essentially my "Hello World"
 
 #include <iostream>
 #include <string>
-#include <conio.h>
 
 using namespace std;
 
@@ -20,12 +19,10 @@ int main()
 {
 	int year = 2020; // Removed math as I got it locked in my brain;
 	int fyear;
-	string love;
 	cout << "Izzy M. made this from memory!\n" << "The year will be: " << year << " - TIME FLIES SO FAST!" << endl << flush;
 	jump_question:
-	cout << "What is your favorite year? (0 to find a secret!)\n" << endl;
+	cout << "What is your favorite year? (0 to exit the program)\n" << endl;
 	cin >> fyear;
-	// cin.ignore();
 
 
 	if (fyear >= 2020) {
@@ -45,24 +42,13 @@ int main()
 		goto jump_question;
 		}
 		else if (fyear == 0) {
-		goto secret_stuff;
+		exit(1);
 		}
 		else {
 		cout << "That's a pretty good year: " << fyear << " - Try another!" << endl << flush;
 		goto jump_question;
 		}
 
-		secret_stuff:
-		{
-			cout << "\nType the secret code here!" << endl;
-			cin >> love;
-		}
-
-	if (love == "love")
-		{
-		system("CLS");
-		cout << "Unlike the secret, it's no secret I will love you forever!\n\n";
-		}
 	system("PAUSE");
 	return 0;
 
