@@ -11,7 +11,7 @@ This is essentially my "Hello World"
 
 /* PST TRAVIS! Ignore the lovie shit, not meant for you! xD.... unless *eyes* lol
  I want to do like a "retry" thing how could I go about using it? I literally just learned about if, else if, else etc. but having troubles understanding how I can have it loop back to try again
- Yes I know this is VERY messy */
+ Yes I know this is VERY messy, I want to fix spacing and making it not as Weird as my friend told me it was! */
 
 #include <iostream>
 #include <string>   // this header is used when declared variable type is string
@@ -19,7 +19,6 @@ This is essentially my "Hello World"
 
 using namespace std; // This makes it so I don't have to type "std::cout" "std::cin" every time, only "cout/cin like I've been doing all day"
 
-	// I haven't learned how to do loops yet so you can "retry" your answer yet, my brain is fried for the rest of the day
 int main()
 {
 	/* string input = "";
@@ -51,7 +50,7 @@ int main()
 	else {
 		cout << "\nThat's a pretty good year: " << fyear << "\n\n\n\n\n";
 	}
-	system("PAUSE");  // There are better ways to do this but I don't know them yet
+	system("PAUSE");  // I know this isn't universal and won't really work, I put this here because the exe kept closing for other people!
 	return 0;
 
 }
