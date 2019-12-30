@@ -8,58 +8,62 @@ This is essentially my "Hello World"
 */
 
 /* PST TRAVIS! Ignore the lovie shit, not meant for you! xD.... unless *eyes* lol
- I want to do like a "retry" thing how could I go about using it? I literally just learned about if, else if, else etc. but having troubles understanding how I can have it loop back to try again
  Yes I know this is VERY messy */
 
 #include <iostream>
-#include <string>   // this header is used when declared variable type is string
-#include <sstream>  // used to enable interoperation between stream buffers and string objects
+#include <string>
+#include <conio.h>
 
-using namespace std; // This makes it so I don't have to type "std::cout" "std::cin" every time, only "cout/cin like I've been doing all day"
+using namespace std;
 
-	// I haven't learned how to do loops yet so you can "retry" your answer yet, my brain is fried for the rest of the day
 int main()
 {
-	/* string input = "";
-	I want to rewrite this with string input */
-
-	int year;
+	int year = 2020; // Removed math as I got it locked in my brain;
 	int fyear;
-	int n1 = 202;
-	int n2 = 10;
-	year = n1 * n2 - 10 + n2; // I was testing math stuff
-	cout << "Izzy M. made this from memory!\n";
-	cout << "The year will be: " << year << " - TIME FLIES SO FAST!\n\n";
+	string love;
+	cout << "Izzy M. made this from memory!\n" << "The year will be: " << year << " - TIME FLIES SO FAST!" << endl << flush;
 	jump_question:
-	cout << "What is your favorite year? (0 to close)\n";
+	cout << "What is your favorite year? (0 to find a secret!)\n" << endl;
 	cin >> fyear;
+	// cin.ignore();
+
+
 	if (fyear >= 2020) {
-		cout << "\n" << fyear << " isn't a year yet silly!\n\nTry another! ";
+		cout << fyear << " isn't a year yet silly! - Try another! " << flush;
 		goto jump_question;
-	}
-	else if (fyear == 1989) {
-		cout << "\nThat's your birth-year my love! " << fyear << " <3\n\nTry another! ";  // Refering to my love!
+		}
+		else if (fyear == 1989) {
+		cout << "That's your birth-year my love! " << fyear << " <3 - Try another! " << flush;  // Refering to my love!
 		goto jump_question;
-	}
-	else if (fyear == 1993) {
-		cout << "\nWOW! How did you know my birth-year was " << fyear << "? I love you!!\n\nTry another! ";
+		}
+		else if (fyear == 1993) {
+		cout << "WOW! How did you know my birth-year was " << fyear << "? I love you!! - Try another! " << flush;
 		goto jump_question;
-	}
-	else if (fyear == 1 || fyear == 2) {
-		cout << "\nDon't be silly!\n\nTry another! ";
+		}
+		else if (fyear == 1 || fyear == 2) {
+		cout << "Don't be silly! - Try another! " << flush;
 		goto jump_question;
-	}
-	else if (fyear == 0) {
-		exit ( 1 );
-	}
-	/* else if (fyear == forever) {
-		std::cout << "That's how long I will love you!\n\n\n\n\n";   SHUT UP!
-	} I AM IDIOT, WORDS CANNOT BE INTEGERS :c hence rewriting with string input (Assuming that fixes) */
-	else {
-		cout << "\nThat's a pretty good year: " << fyear << "\n\nTry another! ";
+		}
+		else if (fyear == 0) {
+		goto secret_stuff;
+		}
+		else {
+		cout << "That's a pretty good year: " << fyear << " - Try another!" << endl << flush;
 		goto jump_question;
-	}
-	system("PAUSE");  // There are better ways to do this but I don't know them yet
+		}
+
+		secret_stuff:
+		{
+			cout << "\nType the secret code here!" << endl;
+			cin >> love;
+		}
+
+	if (love == "love")
+		{
+		system("CLS");
+		cout << "Unlike the secret, it's no secret I will love you forever!\n\n";
+		}
+	system("PAUSE");
 	return 0;
 
 }
