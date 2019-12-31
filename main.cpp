@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-	MyClass obj;
+	Numbers obj;
 	obj.years();
 	goodbye();
 	return 0;
