@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
+	cout << "Izzy M. - I'm testing classes in separate files" << endl;
 	Numbers obj;
 	obj.years();
 	goodbye();
