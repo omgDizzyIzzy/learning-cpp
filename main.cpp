@@ -11,7 +11,6 @@ This is essentially my "Hello World"
  Yes I know this is VERY messy */
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -21,7 +20,7 @@ int main()
 	int fyear;
 	cout << "Izzy M. made this from memory!\n" << "The year will be: " << year << " - TIME FLIES SO FAST!" << endl << flush;
 	jump_question:
-	cout << "What is your favorite year? (0 to exit the program)\n" << endl;
+	cout << "What is your favorite year?\n" << endl;
 	cin >> fyear;
 
 
@@ -40,9 +39,6 @@ int main()
 		else if (fyear == 1 || fyear == 2) {
 		cout << "Don't be silly! - Try another! " << flush;
 		goto jump_question;
-		}
-		else if (fyear == 0) {
-		exit(1);
 		}
 		else {
 		cout << "That's a pretty good year: " << fyear << " - Try another!" << endl << flush;
