@@ -11,40 +11,12 @@ This is essentially my "Hello World"
  Yes I know this is VERY messy */
 
 #include <iostream>
-
-using namespace std;
+#include "functions.hh" // Testing calling functions from another file
 
 int main()
 {
-	int year = 2020; // Removed math as I got it locked in my brain;
-	int fyear;
-	cout << "Izzy M. made this from memory!\n" << "The year will be: " << year << " - TIME FLIES SO FAST!" << endl << flush;
-	jump_question:
-	cout << "What is your favorite year?\n" << endl;
-	cin >> fyear;
 
-
-	if (fyear >= 2020) {
-		cout << fyear << " isn't a year yet silly! - Try another! " << flush;
-		goto jump_question;
-		}
-		else if (fyear == 1989) {
-		cout << "That's your birth-year my love! " << fyear << " <3 - Try another! " << flush;  // Refering to my love!
-		goto jump_question;
-		}
-		else if (fyear == 1993) {
-		cout << "WOW! How did you know my birth-year was " << fyear << "? I love you!! - Try another! " << flush;
-		goto jump_question;
-		}
-		else if (fyear == 1 || fyear == 2) {
-		cout << "Don't be silly! - Try another! " << flush;
-		goto jump_question;
-		}
-		else {
-		cout << "That's a pretty good year: " << fyear << " - Try another!" << endl << flush;
-		goto jump_question;
-		}
-
+	years(); // I moved the function to "functions.cpp" I know it's still sloppy
 	system("PAUSE");
 	return 0;
 
