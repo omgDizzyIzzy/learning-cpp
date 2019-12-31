@@ -11,13 +11,12 @@ This is essentially my "Hello World"
  Yes I know this is VERY messy */
 
 #include <iostream>
-#include "functions.hh" // Testing calling functions from another file
+#include "functions.hh"
 
 int main()
 {
-
-	years(); // I moved the function to "functions.cpp" I know it's still sloppy
+	years();
+	goodbye();
 	system("PAUSE");
 	return 0;
-
 }
