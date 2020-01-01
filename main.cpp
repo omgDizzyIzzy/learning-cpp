@@ -9,9 +9,12 @@ This is essentially my "Hello World" */
 #include "Classes/Numbers.h"
 using namespace std;
 
+// Testing, calling text from outside a function
+string about = "Izzy M. - I'm testing classes in separate files";
+
 int main()
 {
-	cout << "Izzy M. - I'm testing classes in separate files" << endl;
+	cout << about << endl;
 	Numbers obj;
 	obj.years();
 	goodbye();
